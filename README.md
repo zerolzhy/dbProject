@@ -1,3 +1,3 @@
 # dbProject:
 
-    Put This Folder at the location /htdoc/ under xampp location
+Put This Folder at the location /htdoc/ under xampp location
