@@ -40,10 +40,10 @@
       var locationSelect;
 
         function initMap() {
-          var sydney = {lat: -33.863276, lng: 151.107977};
+          var sydney = {lat: 40.724388, lng: -74.037716};
           map = new google.maps.Map(document.getElementById('map'), {
             center: sydney,
-            zoom: 11,
+            zoom: 16,
             mapTypeId: 'roadmap',
             mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU}
           });
@@ -165,8 +165,12 @@
 
        function doNothing() {}
   </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-koQSk9sgVfokC0JNKgBAFryLSci5wmY&callback=initMap">
+  <script type='text/javascript' src='config.js'></script>
+  
+    <script var my_key = config.MY_KEY;
+    async defer
+    
+    src="https://maps.googleapis.com/maps/api/js?key=" + my_key + "&callback=initMap">
     </script>
   </body>
 </html>
